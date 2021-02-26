@@ -1,1 +1,28 @@
-updated, will edit later. not on pc
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    animation: color-change 2s linear infinite;
+}
+.text {
+    width: 70px;
+    height: 47px;
+    background: #92B901;
+    color: white;
+    position: relative;
+    font-weight: bold;
+}
+@keyframes color-change {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
